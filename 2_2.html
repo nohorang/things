@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>WEB1-CSS</title>
+    <style>
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        h1 {
+            font-size: 45px;
+            text-align: center;
+            border-bottom: 1px solid gray;
+            margin: 0px;
+            padding: 10px;
+        }
+
+        #active {
+            color: red;
+        }
+
+        ol {
+            border-right: 1px solid gray;
+            border-style: block;
+            width: 100px;
+            height: 550px;
+            margin: 0px;
+            padding: 20px;
+            margin-left: 15px;
+        }
+
+        body {
+            margin: 0px;
+        }
+
+        #grid {
+            display: grid;
+            grid-template-columns: 170px 1fr;
+        }
+
+        @media(max-width:600px) {
+            #grid {
+                display: block;
+                margin: 0px;
+                padding: 20px;
+                padding-top: 0px;
+                margin-left: 15px;
+            }
+
+            ol {
+                border-right: none;
+                margin: 0px;
+                padding: 20px;
+                padding-top: 0px;
+                height:40px;
+
+
+            }
+
+            h1 {
+                border-bottom: none;
+                margin-left: 20px;
+                text-align: left
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1><a href="index.html">WEB</a></h1>
+    <div id="grid">
+        <div>
+            <ol>
+                <li><a href="1.html" target="_blank" class="saw"> HTML</a></li>
+                <li><a href="2.html" target="_blank" class="saw" id="active"> CSS</a></li>
+                <li><a href="3.html" target="_blank"> Javascript</a></li>
+            </ol>
+        </div>
+        <!--
+    <h1><a href="index.html">WEB</a></h1>
+    <ol>
+        <li><a href="1.html" target="_blank"><font color="red">HTML</font></a></li>
+        <li><a href="2.html" target="_blank"><font color="red">CSS</font></a></li>
+        <li><a href="3.html" target="_blank"><font color="red">Javascript</font></a></li>
+    </ol>
+-->
+        <div>
+            <h2>CSS</h2>
+            <p><a href="https://en.wikipedia.org/wiki/CSS" target="_blank" title="Wikipedia css">Cascading Style Sheets
+                    (CSS)</a> is <strong>a style sheet language</strong> used for describing the presentation of a
+                document
+                written
+                in a markup language such as HTML or XML (including XML dialects such as SVG, MathML or XHTML). CSS is a
+                cornerstone technology of the World Wide Web, alongside HTML and JavaScript.</p>
+            <p>CSS is designed to enable the separation of content and presentation, including layout, colors, and
+                fonts.[3]
+                This separation can improve content accessibility; provide more flexibility and control in the
+                specification
+                of
+                presentation characteristics; enable multiple web pages to share formatting by specifying the relevant
+                CSS
+                in a
+                separate .css file, which reduces complexity and repetition in the structural content; and enable the
+                .css
+                file
+                to be cached to improve the page load speed between the pages that share the file and its formatting.
+            </p>
+            <p>Separation of formatting and content also makes it feasible to present the same markup page in different
+                styles
+                for different rendering methods, such as on-screen, in print, by voice (via speech-based browser or
+                screen
+                reader), and on Braille-based tactile devices. CSS also has rules for alternate formatting if the
+                content is
+                accessed on a mobile device.</p>
+        </div>
+</body>
+
+</html>
