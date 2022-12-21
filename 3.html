@@ -4,12 +4,12 @@
 <head>
     <title>WEB1-Javascript</title>
     <script>
-    function nightDayHandler(){
+    function nightDayHandler(self){
         var target = document.querySelector('body');
-        if (this.value === 'night') {
+        if (self.value === 'night') {
             target.style.backgroundColor = 'black'
             target.style.color = 'white'
-            this.value = 'day'
+            self.value = 'day'
             document.querySelector('#night_day').value = 'day';
 
             var alist = document.querySelectorAll('a');
@@ -21,7 +21,7 @@
         } else {
             target.style.backgroundColor = 'white'
             target.style.color = 'black'
-            this.value = 'night'
+            self.value = 'night'
             document.querySelector('#night_day').value = 'night';
 
             var alist = document.querySelectorAll('a');
@@ -37,7 +37,7 @@
 
 <body>
     <h1><a href="index.html">WEB</a></h1>
-    
+
     <input id="night_day" type="button" value="night" onclick="
     if(document.querySelector('#night_day').value==='night'){
         document.querySelector('body').style.backgroundColor='black'
@@ -86,7 +86,7 @@
         Object Model (DOM).</p>
 
     <input id="night_day2" type="button" value="night" onclick="
-    nightDayHandler();
+    nightDayHandler(this);
     ">
 </body>
 
